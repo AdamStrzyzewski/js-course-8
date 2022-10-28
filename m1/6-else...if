@@ -1,0 +1,14 @@
+// else...if
+let x = 0;
+
+const subscription = "pro2"
+
+if (subscription === "pro2"){
+    x = 100;
+} else if(subscription === 'pro2') {
+    x = 150;
+} else {
+    x = 50;
+}
+
+console.log('x', x)

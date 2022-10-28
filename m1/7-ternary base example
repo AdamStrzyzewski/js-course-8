@@ -1,0 +1,15 @@
+// ternary base example
+let ageSegment
+const age = 20;
+
+// if(age >= 18){
+//     ageSegment = 'adult';
+// } else {
+//     ageSegment = 'child';
+// }
+
+ageSegment = age >= 18 ? 'adult' : 'child';
+
+// cond1 ? value1 : cond2 ? value2 : value3 -> bad practice
+
+console.log(ageSegment)

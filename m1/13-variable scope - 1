@@ -1,0 +1,10 @@
+// variable scope - 1
+
+
+let value = 5;
+
+if(true) {
+  console.log(`block-${value}`);  
+}
+
+console.log(`out-of-block-${value}`);  

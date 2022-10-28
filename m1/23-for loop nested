@@ -1,0 +1,15 @@
+// for loop nested
+// i j k
+for (let i = 0 ; i <= 10 ; i++){
+    for (let j = 0 ; j <= 2 ; j++){
+        console.log(`${i}-${j}`)
+    }
+}
+
+// i ii iii
+for (let i = 0 ; i <= 10 ; i++){
+    for (let ii = 0 ; ii <= 2 ; ii++){
+        console.log(`${i}-${ii}`)
+    }
+}
+

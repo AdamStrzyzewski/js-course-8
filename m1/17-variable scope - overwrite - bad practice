@@ -1,0 +1,9 @@
+// variable scope - overwrite - bad practice
+
+const x = 5;
+if(true) {
+  const x = 10;
+  console.log(x);
+}
+console.log(x);
+// const x = 10;

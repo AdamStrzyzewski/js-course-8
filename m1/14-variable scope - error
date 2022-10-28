@@ -1,0 +1,7 @@
+// variable scope - error
+if(true) {
+  let value = 5;
+  console.log(`block-${value}`);  
+}
+
+console.log(`out-of-block-${value}`);  

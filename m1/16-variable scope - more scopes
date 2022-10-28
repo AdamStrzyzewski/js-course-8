@@ -1,0 +1,11 @@
+// variable scope - more scopes
+
+const x = 5;
+if(true) {
+  const y = 10;
+  if(true) {
+      console.log(`${x}-${y}`)
+  }
+}
+// console.log(y)
+// const x = 10;

@@ -1,0 +1,9 @@
+// do while loop prompt
+let pass = '';
+
+do {
+  pass = prompt("input password minimum of 5") 
+  console.log(`${pass} - ${pass.length} - ${pass.length < 5}`)
+} while (pass.length < 5)
+
+console.log(`your password is: ${pass}`)

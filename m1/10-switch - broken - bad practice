@@ -1,0 +1,20 @@
+// switch - broken - bad practice
+const x = 'pro';
+
+switch (x) {
+    case 'pro': // x === 'pro'
+        console.log("You are a premium member");
+    case 'mid': 
+        console.log("Your plan is medium")
+    break;
+    default:
+        console.log("I don't know your plan")
+}
+
+// if (x === 'pro'){
+//     console.log("You are a premium member")    
+// } else if(x ==='mid'){
+//     console.log("Your plan is medium")
+// } else{
+//     console.log("I don't know your plan")
+// }

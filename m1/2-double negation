@@ -1,0 +1,5 @@
+// double negation
+let x = 5;
+x = 0;
+x = !!x; // double negation -> casts truthy -> true, falsey na false
+console.log(x)

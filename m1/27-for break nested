@@ -1,0 +1,11 @@
+// for break nested
+for (let i = 1 ; i <= 5 ; i++) {
+    for (let j = 1 ; j <= 2 ; j++){
+        if(i >= 3){
+            break;
+        }
+        console.log(`${i}-${j}`)
+    }
+    console.log(i)
+}
+

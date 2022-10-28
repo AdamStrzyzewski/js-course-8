@@ -1,0 +1,16 @@
+// if truthy falsey
+// const condition = 0; // false-y
+// const condition = 1; // truth-y
+// const condition = -1; // truth-y
+// const condition = 'false'; // truth-y
+// const condition = ''; // false-y
+// const condition = true; // true
+// const condition = false; // false
+// const condition = [] // true
+// const condition = {} // true
+// const condition = undefined; // false
+// const condition = null // false
+const condition = 1;
+if(!!condition){
+    console.log(!!condition)
+}

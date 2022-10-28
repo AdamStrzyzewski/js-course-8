@@ -1,0 +1,9 @@
+// ternary second example
+const n1 = 15;
+const n2 = 10;
+
+const largerN = n1 > n2 ? n1 : n2;
+
+console.log(largerN)
+
+

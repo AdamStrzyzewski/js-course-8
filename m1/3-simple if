@@ -1,0 +1,10 @@
+// simple if
+let x = 0;
+
+const subscription = "pro"
+
+if(subscription === "pro"){
+    x = 100;
+}
+console.log(subscription === "pro");
+console.log(x)
