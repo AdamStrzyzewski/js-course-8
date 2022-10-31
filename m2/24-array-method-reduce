@@ -1,0 +1,23 @@
+// array method reduce
+
+const ns = [1,2,3,4,5]
+
+const sumOfN = ns.reduce((acc, el) => acc + el, 0)
+
+// for learning purposes
+// const sumOfN = ns.reduce(
+//     (acc, el) => {
+//         console.log(`acc => ${acc} ; el => ${el} ; acc + el => ${acc + el}`)
+//         return acc + el;
+//     }, // fn
+//     0 // accumulator
+// )
+
+// let sumOfN2 = 0
+
+// ns.forEach(n => {
+//     sumOfN2 += n
+// })
+
+console.log(`reduced: ${sumOfN}`)
+// console.log(`foreach: ${sumOfN2}`)

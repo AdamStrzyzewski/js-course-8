@@ -1,0 +1,6 @@
+// array method index of
+const names = ['Adam', 'Grażyna', 'Sebastian', 'Marcin']
+
+console.log(names.indexOf('Sebastian'))
+console.log(names.indexOf('Grażyna'))
+console.log(names.indexOf('John'))

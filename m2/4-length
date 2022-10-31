@@ -1,0 +1,4 @@
+// length
+const arr = ['Adam', 'Janusz', 'Grażyna', 'John'];
+const arrLength = arr.length
+console.log(arrLength)

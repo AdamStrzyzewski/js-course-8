@@ -1,0 +1,39 @@
+// iteration
+
+const clients = ['Adam', 'John', 'Eva']
+
+// for (let i = 0 ; i < clients.length ; i++){
+//     console.log(`${clients[i]} - index ${i}`);
+// }
+
+// for (const client of clients){
+//     console.log(client);
+// }
+
+// const bestLanguage = 'javascript';
+// for (const char of bestLanguage){
+//     console.log(char)
+// }
+
+// let isThereAClientNamedJohn = false
+
+// for (const client of clients){
+//     console.log("loop")
+//     if(client.toLowerCase() === 'john'){
+//         isThereAClientNamedJohn = true;
+//         break;
+//     }
+// }
+
+// console.log(isThereAClientNamedJohn)
+
+const numbers = [1, 3, 14, 18, 4, 7, 29, 6, 34];
+
+const threshold = 15;
+
+for(const number of numbers){
+    if(number < threshold){
+        continue;
+    }
+    console.log(number);
+}

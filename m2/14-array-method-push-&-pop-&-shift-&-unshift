@@ -1,0 +1,9 @@
+// array method push & pop & shift & unshift
+
+const ns = [1,2,3,4]
+
+// ns.push(5) // add one more element at the end
+// ns.pop() // remove last element
+// ns.unshift(0) // add one more element at the start
+// ns.shift() // remove first element
+console.log(ns)

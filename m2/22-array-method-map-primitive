@@ -1,0 +1,10 @@
+// array method map primitive
+
+const ns = [1,2,3,4,5]
+
+const nsMapped = ns.map(n => {
+    n = n + 2;
+    return n
+})
+
+console.log(nsMapped)

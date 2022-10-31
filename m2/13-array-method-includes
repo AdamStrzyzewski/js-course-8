@@ -1,0 +1,6 @@
+// array method includes
+
+const clients = ['Adam', 'John', 'Eve'];
+
+console.log(clients.includes('Adam'))
+console.log(clients.includes('Maks'))

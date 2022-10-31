@@ -1,0 +1,33 @@
+// array method find
+
+const clients = [
+ {
+    "name": "Adam",
+    "surname": "Nowak"
+ },
+ {
+    "name": "Eve",
+    "surname": "Green"
+ },
+ {
+    "name": "Johnny",
+    "surname": "Depp"
+ }
+]
+
+// const x = clients.indexOf({
+//     "name": "Eve",
+//     "surname": "Green"
+//  }) // this does not work
+
+// const foundEl = clients[1]
+const foundEl = clients.find(el => 
+{
+    console.log(el.name)
+    return el.surname === 'Green'
+})
+
+foundEl.name = 'John'
+
+console.log(foundEl)
+console.log(clients)

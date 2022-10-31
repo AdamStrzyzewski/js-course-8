@@ -1,0 +1,6 @@
+// modifying index content
+const arr = ['Adam', 'Janusz', 'Grażyna'];
+
+arr[0] = 'Ewa'
+
+console.log(arr)

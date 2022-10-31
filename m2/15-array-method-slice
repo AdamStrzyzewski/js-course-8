@@ -1,0 +1,10 @@
+// array method slice
+
+const ns = [1,2,3,4]
+
+// slice(<begin, end))
+console.log(ns.slice(0,2))
+console.log(ns.slice())
+console.log(ns.slice(2))
+console.log(ns.slice(-2))
+console.log(ns)

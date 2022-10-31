@@ -1,0 +1,11 @@
+// array indexes fun time
+const arr = ['Adam', 'Janusz', 'Grażyna', 'John'];
+
+console.log(arr[arr.length - 1]);
+console.log(arr.at(-1))
+// arr[-1] = 'test' // bad practice
+// arr['test'] = 'test2' // bad practice
+console.log(arr['test'])
+// console.log(arr.pop()) // this modifies the array
+
+console.log(arr)

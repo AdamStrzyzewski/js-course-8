@@ -1,0 +1,13 @@
+// array method concat
+
+const ns = [1,2,3,4,5];
+
+const ns2 = [6,7,8,9];
+
+const ns3 = ns2.concat(ns)
+
+console.log(ns3)
+
+// const ns4 = [...ns2, ...ns]
+
+// console.log(ns4)

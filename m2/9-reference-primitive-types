@@ -1,0 +1,10 @@
+// reference primitive types
+
+let a = 5;
+let b = 10;
+
+a = b // a = 10
+
+b = 15
+
+console.log(a,b)

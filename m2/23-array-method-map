@@ -1,0 +1,34 @@
+// array method map
+
+const clients = [
+ {
+    "name": "Adam",
+    "surname": "Nowak"
+ },
+ {
+    "name": "Eve",
+    "surname": "Green"
+ },
+ {
+    "name": "John",
+    "surname": "Green"
+ },
+ {
+    "name": "Johnny",
+    "surname": "Depp"
+ },
+ {
+    "name": "Alex",
+    "surname": "Green"
+ },
+]
+
+const clientsMapped = clients.map((el,i) => {
+    if(el.surname === 'Green'){
+        el.surname = 'Blue';
+    }
+    el.i = i
+    return el;
+})
+
+console.log(clientsMapped)

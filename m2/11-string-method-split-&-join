@@ -1,0 +1,6 @@
+// string method split & join
+const name = 'Adam,Andrzej,Grażyna,Strzyżewski';
+const splitName = name.split(',')
+console.log(splitName)
+
+console.log(splitName.join(';'))

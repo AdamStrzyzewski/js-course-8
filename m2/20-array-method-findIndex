@@ -1,0 +1,20 @@
+// array method findIndex
+
+const clients = [
+ {
+    "name": "Adam",
+    "surname": "Nowak"
+ },
+ {
+    "name": "Eve",
+    "surname": "Green"
+ },
+ {
+    "name": "Johnny",
+    "surname": "Depp"
+ }
+]
+
+const foundIndex = clients.findIndex(el => el.surname === 'Green')
+
+console.log(foundIndex)

@@ -1,0 +1,8 @@
+// last array item
+const arr = ['Adam', 'Janusz', 'Grażyna', 'John'];
+
+console.log(arr[arr.length - 1]);
+console.log(arr.at(-1))
+// console.log(arr.pop()) // this modifies the array
+
+console.log(arr)

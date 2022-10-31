@@ -1,0 +1,15 @@
+// reference arrays
+
+const a = ['Adam'];
+
+const b = a;
+const c = b;
+
+console.log(b)
+
+b.push('John')
+c.push('Eve')
+
+console.log(b)
+console.log(a)
+console.log(c)

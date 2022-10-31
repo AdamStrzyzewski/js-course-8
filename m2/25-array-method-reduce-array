@@ -1,0 +1,10 @@
+// array method reduce array
+
+const ns = [1,2,3,4,5]
+
+const arrayOfNTimes2 = ns.reduce((acc, el) => {
+    acc.push(el * 2);
+    return acc;
+}, [])
+
+console.log(arrayOfNTimes2)
