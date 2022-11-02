@@ -1,0 +1,16 @@
+// function vs const = function
+
+console.log(multiply(5,10))
+
+function multiply(a,b){
+    return a*b
+}
+
+
+// console.log(multiplyFn(20,10)) // this throws an error
+
+const multiplyFn = function (a,b) {
+    return `I come from a const ${a*b}`
+}
+
+console.log(multiplyFn(20,10))

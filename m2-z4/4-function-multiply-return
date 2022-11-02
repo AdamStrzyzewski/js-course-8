@@ -1,0 +1,16 @@
+// function multiply return
+// parameters x,y,z
+function multiply(x, y, z) {
+    if(typeof x === 'undefined'){
+        return 'x is not a number' // stop executing the function
+    }
+    
+    console.log("x is okay")
+    return x*y*z; // stop executing the function
+    console.log("never gonna trigger")
+}
+
+const multiplicationResult = multiply(5,10,15)
+const multiplicationResultError = multiply()
+console.log(multiplicationResult)
+console.log(multiplicationResultError)

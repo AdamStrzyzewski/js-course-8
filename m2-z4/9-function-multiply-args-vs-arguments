@@ -1,0 +1,23 @@
+// function multiply args vs arguments
+// parameters x,y,z
+function multiply(currencySymbol, ...args) {
+    console.log(arguments)
+    // classic function
+    const multipliedValue = args.reduce(
+     function(acc,el) {
+      return acc * el   
+     },
+     1
+    )
+    
+    // arrow function
+    // const multipliedValue = args.reduce(
+    //  (acc,el) => acc * el,
+    //  1
+    // )
+    return `${multipliedValue}${currencySymbol}`
+}
+
+
+console.log(multiply('$',1,2,3,4,5))
+

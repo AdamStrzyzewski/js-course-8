@@ -1,0 +1,13 @@
+// function multiply args
+// parameters x,y,z
+function multiply(...args) {
+    args.push(7)
+    
+    return args.reduce(function(acc,el){
+        return acc * el
+    }, 1)
+}
+
+
+console.log(multiply(1,2,3,5,6))
+

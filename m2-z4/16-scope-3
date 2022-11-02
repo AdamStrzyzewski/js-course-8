@@ -1,0 +1,18 @@
+// scope 3
+
+for (let i = 0; i < 5; i++) {
+  const a = 20;
+  console.log(a); // 20
+
+  if (i === 2) {
+    const b = 30;
+    console.log(a); // 20
+    console.log(b); // 30
+    // if(){}
+  }
+
+  if (i === 3) {
+    console.log(a); // 20
+    // console.log(b); // reference error
+  }
+}

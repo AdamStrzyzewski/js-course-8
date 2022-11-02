@@ -1,0 +1,21 @@
+// scope 2
+
+const a = 5;
+
+function foo() {
+    const a = 20;
+    console.log(a);
+}
+
+// foo()
+
+// console.log(a) // reference error
+
+for(let i = 0 ; i < 3 ; i++) {
+    // console.log(a);
+    const a = 10;
+    console.log(a); // this is a different a
+    foo();
+}
+
+console.log(a);

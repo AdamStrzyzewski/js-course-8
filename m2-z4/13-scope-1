@@ -1,0 +1,17 @@
+// scope 1
+
+const globalValue = 10;
+
+console.log(globalValue)
+
+function foo(){
+    console.log(globalValue)
+}
+
+for(let i = 0 ; i < 5 ; i++){
+    console.log(globalValue)
+    foo()
+}
+
+foo()
+

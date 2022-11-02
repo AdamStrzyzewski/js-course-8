@@ -1,0 +1,21 @@
+// recursion factorial
+
+// factorial
+
+// 4! => 1 * 2 * 3 * 4 => 24
+
+function factorial(n){
+    if(n === 0){
+        return 1;
+    } else {
+        return n * factorial(n - 1)
+    }
+}
+
+console.log(factorial(4))
+
+// factorial z 4 = 4 * factorial(3) // factorial(4)
+// factorial z 3 = 3 * factorial(2) // factorial(3)
+// factorial z 2 = 2 * factorial (1) // factorial(2)
+// factorial z 1 = 1 * factorial(0) // factorial(1)
+// factorial z 0 = 1 // break warunek graniczny // factorial(0)

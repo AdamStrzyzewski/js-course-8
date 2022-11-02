@@ -1,0 +1,17 @@
+// stack lifo 1
+
+function foo() {
+    console.log("foo")
+}
+
+function bar() {
+    console.log("bar")
+}
+
+function baz() {
+    console.log('baz')
+    bar()
+    foo()
+}
+
+baz()

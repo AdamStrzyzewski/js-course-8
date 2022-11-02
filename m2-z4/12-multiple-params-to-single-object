@@ -1,0 +1,17 @@
+// multiple params to single object
+function withdraw({ currencySymbol = '$', amount, balance }){
+    if(amount === 0){
+        console.log("you cannot withdraw nothing")
+        return;
+    }
+    
+    if(amount > balance){
+        console.log("you are just a little bit poor");
+        return;
+    }
+    
+    console.log("you have withdrew your money")
+    return;
+}
+
+withdraw({ currencySymbol: '$', amount: 100, balance: 2000 })

@@ -1,0 +1,41 @@
+// recursion fibbonaci
+
+// 0, 1, 1, 2, 3, 5, 8, 13, 21 ...
+
+// const getFibb = function (n) {
+//   if (n === 1) {
+//     return [0, 1];
+//   } else {
+//     let s = getFibb(n - 1);
+//     s.push(s[s.length - 1] + s[s.length - 2]);
+//     return s;
+//   }
+// };
+
+const getFibbNElem = function(n) {
+  if (n <= 1) return 1;
+//   if (log){
+//     console.log(`n = ${n} ; fibb(n-1) = ${getFibbNElem(n - 1, false)} ; fibb(n-2) = ${getFibbNElem(n - 2, false)}`)
+//   }
+  return getFibbNElem(n - 1) + getFibbNElem(n - 2);
+}
+
+console.log(getFibbNElem(5));
+
+
+function fibonacci(num){
+  let a = 1
+  let b = 0 
+  let temp;
+
+  while (num >= 0){
+    temp = a;
+    a = a + b;
+    b = temp;
+    num--;
+  }
+
+  return b;
+}
+
+console.log(fibonacci(5))

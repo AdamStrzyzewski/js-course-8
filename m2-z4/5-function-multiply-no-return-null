@@ -1,0 +1,8 @@
+// function multiply no return null
+// parameters x,y,z
+function multiply(x, y, z) {
+    const a = x * y * z
+}
+
+
+console.log(multiply(5,10,15))

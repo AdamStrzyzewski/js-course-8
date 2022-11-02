@@ -1,0 +1,15 @@
+// stack lifo 2 41325
+
+function fnA(){
+    console.log(1)
+    fnB()
+    console.log(2)
+}
+
+function fnB(){
+    console.log(3)
+}
+
+console.log(4)
+fnA()
+console.log(5)

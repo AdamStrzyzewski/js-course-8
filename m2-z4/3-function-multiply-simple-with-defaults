@@ -1,0 +1,20 @@
+// function multiply simple with defaults
+// parameters x,y,z
+function multiply(x = 1, y = 1, z = 1) {
+    console.log(`x * y * z = ${x} * ${y} * ${z} = ${x*y*z}`)
+}
+
+console.log("before function call")
+// arguments 5,2 (default z = 1)
+multiply()
+multiply(5)
+multiply(5,2)
+multiply(5,2,6)
+
+console.log("after function call")
+
+// const x = prompt('give me x')
+// const y = prompt('give me y')
+// const z = prompt('give me z')
+
+// multiply(x,y,z)

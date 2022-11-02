@@ -1,0 +1,15 @@
+// function multiply arguments
+// parameters x,y,z
+function multiply() {
+    let total = 1;
+    
+    for(const arg of arguments) {
+        total *= arg
+    }
+    
+    return total
+}
+
+
+console.log(multiply(1,2,3,4,5,6))
+
