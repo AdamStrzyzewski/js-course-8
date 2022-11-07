@@ -1,0 +1,24 @@
+// array of objects example from a question
+
+let books = [
+  {
+    title: "The Last Kingdom",
+    rating: 8.38,
+    author: "Bernard Cornwell",
+  },
+  {
+    author: "Robert Sheckley",
+    rating: 8.51,
+    title: "Beside Still Waters",
+  },
+  {
+    title: "Sen śmiesznego człowieka",
+    author: "Fiodor Dostojewski",
+    rating: 7.75,
+  },
+];
+
+books = books.map(function(el) {
+    return Object.keys(el)
+})
+console.log(books)

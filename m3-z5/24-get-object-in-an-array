@@ -1,0 +1,28 @@
+// get object in an array
+
+const tasksList = [
+    {
+        id: 1,
+         name: 'posprzątaj garaż'
+    },
+    {
+        id: 2,
+        name: 'odkurz podłogi'
+    }
+]
+
+const task = tasksList.find(function(el){
+    return el.id === 2
+})
+
+console.log(task)
+console.log(task.name)
+
+
+const numbers = [1,2,3,4,5,6]
+
+const number = numbers.find(function(el){
+    return el === 10
+})
+
+console.log(number) // undefined

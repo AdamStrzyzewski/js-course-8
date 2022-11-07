@@ -1,0 +1,26 @@
+// methods
+const bookShelf = {
+    books: ['The last Kingdom', "Dream Guardian"],
+    getBooks() {
+        return this.books
+        // console.log('This method will return all the books')
+    },
+    addRandomBook(){
+        this.addBook(`${Math.floor(Math.random() * 100)}`)
+    },
+    addBook(bookName){
+        this.books.push(bookName)
+    },
+    removeBook(bookName){
+        const bookIndex = this.books.indexOf(bookName)
+        if(bookIndex !== -1){
+            this.books.splice(bookIndex, 1)
+        }
+    }
+}
+
+
+bookShelf.addBook("Hobbit")
+bookShelf.addRandomBook()
+bookShelf.removeBook('The last Kingdom')
+console.log(bookShelf.getBooks())

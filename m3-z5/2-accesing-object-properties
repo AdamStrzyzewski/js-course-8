@@ -1,0 +1,29 @@
+// accesing object properties
+
+const book = {
+    title: "The last Kindgom",
+    author: {firstName: "Bernard", lastName: "Cornwell"},
+    genres: ['historical prose', 'adventure'],
+    isPublic: true,
+    rating: 8.38,
+    'test key with a space': 'test value',
+    _t: 1,
+    $t: 2,
+    5: 'test value under numerical key',
+    
+};
+
+// 1st way
+console.log(book.title)
+console.log(book.author.firstName)
+console.log(book._t)
+
+// 2nd []
+console.log(book['test key with a space'])
+console.log(book[5])
+const key = 'rating'
+console.log(book[key])
+console.log(book['author']['firstName'])
+
+
+console.log(book.nonExistingKey) // undefined

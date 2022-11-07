@@ -1,0 +1,21 @@
+// for...in
+
+const book = {
+  title: "The Last Kingdom",
+  author: "Bernard Cornwell",
+  genres: ["historical prose", "adventure"],
+  rating: 8.38,
+  addGenre(){
+      this.genres.push('test')
+  }
+};
+
+for (const key in book){
+    // console.log(key); // keys of props
+    console.log(typeof book[key]) // values of props
+    if(typeof book[key] === 'function'){
+        book[key]()
+    }
+}
+
+console.log(book)

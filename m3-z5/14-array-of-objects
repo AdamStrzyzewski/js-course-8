@@ -1,0 +1,39 @@
+// array of objects
+
+const books = [
+  {
+    title: "The Last Kingdom",
+    rating: 8.38,
+    author: "Bernard Cornwell",
+  },
+  {
+    author: "Robert Sheckley",
+    rating: 8.51,
+    title: "Beside Still Waters",
+  },
+  {
+    title: "Sen śmiesznego człowieka",
+    author: "Fiodor Dostojewski",
+    rating: 7.75,
+  },
+];
+
+// for (const book of books){
+//     console.log(`Title of this book is: ${book.title}`)
+// }
+
+// books.forEach(function(book,i){
+//     console.log(`Title of book number ${i} is ${book.title}`)
+// })
+
+books.push({
+    author: "Chuck Palahniuk",
+    rating: 6.05,
+    title: "Choke",
+})
+
+const avgRating = books.reduce(function (acc,book){
+    return acc + book.rating
+}, 0) / books.length
+
+console.log(avgRating)

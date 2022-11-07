@@ -1,0 +1,16 @@
+// methods nested this
+const bookShelf = {
+    books: ['The last Kingdom', "Dream Guardian"],
+    author: {
+        name: 'Adam',
+        changeName(newName){
+            console.log(this)
+            this.name = newName
+        }
+    }
+}
+
+console.log(bookShelf)
+
+bookShelf.author.changeName('John')
+console.log(bookShelf)

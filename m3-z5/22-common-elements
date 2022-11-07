@@ -1,0 +1,13 @@
+// common elements
+
+function getCommonElement(arr1, arr2){
+    
+}
+
+const arr1 = [1,2,3];
+const arr2 = [3,4,5];
+
+getCommonElement(arr1,arr2) // => [3] 
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set
+// new Set()

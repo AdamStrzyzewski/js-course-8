@@ -1,0 +1,35 @@
+// array of objects reference
+
+const books = [
+  {
+    title: "The Last Kingdom",
+    rating: 8.38,
+    author: "Bernard Cornwell",
+  },
+  {
+    author: "Robert Sheckley",
+    rating: 8.51,
+    title: "Beside Still Waters",
+  },
+  {
+    title: "Sen śmiesznego człowieka",
+    author: "Fiodor Dostojewski",
+    rating: 7.75,
+  },
+];
+
+const newBook = {
+    author: "Chuck Palahniuk",
+    rating: 6.05,
+    title: "Choke",
+}
+
+books.push(newBook)
+
+books[books.length - 1].rating += 1
+
+console.log(books)
+
+console.log('-----')
+
+console.log(newBook)

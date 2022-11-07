@@ -1,0 +1,19 @@
+// destructuration pt 2
+
+const book = {
+    name: 'Adam',
+    title: 'I hate JS'
+}
+
+// const { name, title } = book
+
+function returnName({ name }){
+    name = 'Jack';
+    return name
+}
+
+console.log(returnName(book))
+
+console.log(book)
+
+

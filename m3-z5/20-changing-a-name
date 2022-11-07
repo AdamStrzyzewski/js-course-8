@@ -1,0 +1,11 @@
+// changing a name
+
+const book = {
+    name: 'Adam',
+    title: 'I hate JS'
+}
+
+book.tytul = book.title
+delete book.title
+
+console.log(book)

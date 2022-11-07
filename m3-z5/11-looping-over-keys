@@ -1,0 +1,25 @@
+// looping over keys
+
+const book = {
+  title: "The Last Kingdom",
+  author: "Bernard Cornwell",
+  genres: ["historical prose", "adventure"],
+  rating: 8.38,
+};
+
+const keys = Object.keys(book)
+
+console.log(keys)
+
+// approach one
+// for (const key of keys){
+//     console.log(key) // key of prop
+//     console.log(book[key]) // value of prop
+// }
+
+
+// alternative approach
+// keys.forEach(key => {
+//     console.log(key) // key of prop
+//     console.log(book[key]) // value of prop
+// })

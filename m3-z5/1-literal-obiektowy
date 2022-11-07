@@ -1,0 +1,15 @@
+// literal obiektowy
+
+const book = {
+    title: "The last Kindgom",
+    author: "Bernard Cornwell",
+    genres: ['historical prose', 'adventure'],
+    isPublic: true,
+    rating: 8.38,
+    'test key with a space': 'test value',
+    _t: 1,
+    $t: 2,
+    // 5: 'test'
+};
+
+// console.log(book.5);

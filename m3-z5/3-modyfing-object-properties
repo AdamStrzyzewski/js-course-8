@@ -1,0 +1,28 @@
+// modyfing object properties
+const book = {
+    title: "The last Kindgom",
+    author: {firstName: "Bernard", lastName: "Cornwell"},
+    genres: ['historical prose', 'adventure'],
+    isPublic: true,
+    rating: 8.38,
+    'test key with a space': 'test value',
+    _t: 1,
+    $t: 2,
+    5: 'test value under numerical key',
+};
+
+book.rating++;
+book.rating += 0.5;
+book._t += 'new value';
+book.genres.push('historical');
+book.author.firstName = 'Bernard R.'
+book.title = 'The Last Kingdom'
+book.pages = 500
+book.translations = ['pl','en','de']
+
+book.isAvailable = book.isPublic;
+delete book.isPublic;
+
+
+
+console.log(book);

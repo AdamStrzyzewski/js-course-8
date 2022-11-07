@@ -1,0 +1,14 @@
+// declaring object with variable key
+
+const propName = 'name'
+
+const user = {
+    [propName]: 'John Doe',
+    [propName]: 'Adam S',
+    [propName]: 'Tom C',
+    propName: 'Jane Doe'
+}
+
+// user[propName] = 'Sylvester S'
+
+console.log(user)

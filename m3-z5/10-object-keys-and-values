@@ -1,0 +1,11 @@
+// object keys and values
+
+const animal = {
+  legs: 4,
+};
+const dog = Object.create(animal);
+dog.name = "Mango";
+
+
+console.log(Object.keys(dog))
+console.log(Object.values(dog))

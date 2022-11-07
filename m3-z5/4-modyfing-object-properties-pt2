@@ -1,0 +1,23 @@
+// modyfing object properties pt2
+const arr = [1,2,3];
+const exampleObject = { name: 'Adam', surname: 'S' }
+const exampleString = 'test string'
+const obj = {
+    arr, // arr: arr
+    exampleString, // exampleString: exampleString
+    newKey: exampleString,
+    user: exampleObject
+}
+
+// reference example - arrays and objects change by reference
+arr.push(4)
+const nameKey = 'name'
+exampleObject[nameKey] = 'John'
+obj.user.surname = 'D'
+
+obj.exampleString = 'new changed string'
+
+console.log(obj)
+console.log(exampleObject)
+// primitive values don't change
+console.log(exampleString)

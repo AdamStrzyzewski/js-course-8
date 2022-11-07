@@ -1,0 +1,15 @@
+// destructuration
+
+const book = {
+    name: 'Adam',
+    title: 'I hate JS'
+}
+
+function returnName({ name }){
+    return name
+}
+
+
+console.log(returnName(book))
+
+
