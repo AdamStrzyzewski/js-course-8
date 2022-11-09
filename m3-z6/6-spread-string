@@ -1,0 +1,11 @@
+// spread string
+
+const str = 'abcdef$$%@#$@#:FDS   '
+const strChars = [...str]
+// const strCharsAlt = str.split('')
+// console.log(...strCharsAlt)
+console.log(...strChars)
+
+const strArr = ['aew','bfdas','fdac']
+// console.log(strArr) // console.log(strArr[0], strArr[1], strArr[2])
+

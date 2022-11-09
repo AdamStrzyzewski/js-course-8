@@ -1,0 +1,12 @@
+// destructuration arrays less variables
+
+const arr = [200,255,100, [1,2,3]]
+
+const [red, green, blue] = arr
+
+// const red = arr[0]
+// const green = arr[1]
+// const blue = arr[2]
+
+console.log(red,green,blue)
+console.log(arr)

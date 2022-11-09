@@ -1,0 +1,22 @@
+// nested destructuration
+
+const user = {
+  name: "Jacques Gluke",
+  tag: "jgluke",
+  stats: {
+    followers: 5603,
+    views: 4827,
+    likes: 1308,
+  },
+};
+
+
+const {
+    name,
+    tag,
+    stats: {
+     followers: userFollowers, views: userViews, likes: userLikes   
+    }
+} = user
+
+console.log([name, tag, userFollowers, userViews,userLikes])

@@ -1,0 +1,14 @@
+// spread objects nested reference
+
+const first = { propA: 5, propB: 10, propC: 20 }
+const second = { propC: { propD: 25 } }
+
+const third = {
+    ...first,
+    ...second
+}
+
+third.propC.propD = 35
+
+console.log(third)
+console.log(second)

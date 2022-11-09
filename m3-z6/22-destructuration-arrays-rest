@@ -1,0 +1,8 @@
+// destructuration arrays rest
+
+const arr = [200, 255, 100]
+
+const [red, ...rest] = arr
+
+console.log(red)
+console.log(rest)

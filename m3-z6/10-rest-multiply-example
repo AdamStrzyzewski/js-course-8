@@ -1,0 +1,13 @@
+// rest multiply example
+
+function multiply(...args) {
+    let total = 1
+    for(let i = 0 ; i < args.length ; i++){
+        total *= args[i]
+    }
+    console.log(`${args.join(" * ")} = ${total}`)
+}
+
+multiply()
+multiply(1)
+multiply(1,2,3,4,5)

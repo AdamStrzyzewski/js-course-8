@@ -1,0 +1,9 @@
+// flat map question
+
+const arr1 = [1, 2, [3], [[4,5], 5]];
+
+const flattened = arr1.flatMap(num => num);
+
+arr1[3][0].push(6)
+console.log(flattened);
+console.log(arr1)

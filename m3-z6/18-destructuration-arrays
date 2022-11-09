@@ -1,0 +1,16 @@
+// destructuration arrays
+
+const arr = [200,255,100, [1,2,3]]
+
+const [red, green, blue, referencedArr] = arr
+
+// const red = arr[0]
+// const green = arr[1]
+// const blue = arr[2]
+// const referencedArr = arr[3]
+
+
+referencedArr.push(4)
+arr[3].push(5)
+console.log(red,green,blue,referencedArr)
+console.log(arr)

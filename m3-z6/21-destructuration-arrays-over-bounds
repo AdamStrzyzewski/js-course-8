@@ -1,0 +1,11 @@
+// destructuration arrays over bounds
+
+const arr = [200, 255, 100]
+
+const [,red, green, blue = 255] = arr
+
+// const red = arr[1]
+// const green = arr[2]
+// const blue = arr[3]
+
+console.log(red, green, blue)

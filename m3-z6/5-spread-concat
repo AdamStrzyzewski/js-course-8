@@ -1,0 +1,9 @@
+// spread concat
+
+const lastWeekendTemps = [14,25,11]
+const currentWeekendTemps = [23,17,18]
+
+const allTemps = [...lastWeekendTemps, ...currentWeekendTemps]
+// const allTemps = [lastWeekendTemps[0], lastWeekendTemps[1], lastWeekendTemps[2],currentWeekendTemps[0], currentWeekendTemps[1], currentWeekendTemps[2]]
+
+console.log(allTemps)

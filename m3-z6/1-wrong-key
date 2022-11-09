@@ -1,0 +1,14 @@
+// wrong key
+const x = {
+    test: 1,
+    'test ##$@#$': 2,
+    '2pac': 3,
+    // 2pac: 5, // syntax error
+    2: '5',
+    '2': 10
+}
+
+console.log(x)
+// console.log(x.2) // syntax error
+console.log(x[2])
+console.log(x['2'])

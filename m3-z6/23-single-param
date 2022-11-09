@@ -1,0 +1,26 @@
+// single param
+
+// function foo(param1, param2, param3 = 10, param4 = {test: true}, param5 = 10){
+//     // does magic
+// }
+
+// function foo(options){ 
+//     const { param1, param2, param3 = 10, param4 = { test: true }, param5 = 10 } = options
+// }
+
+function foo({
+      param1,
+      param2, 
+      param3 = 10, 
+      param4 = { test: true }, 
+      param5 = 10,
+      param6 = undefined
+}) {
+    
+}
+
+
+foo({ param1: 10, param2: 15 })
+foo({ param1: 245, param2: 20, param3: 10, param4: {test: false} })
+
+// 354 files in 15 projects

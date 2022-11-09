@@ -1,0 +1,33 @@
+// destructuration
+
+const book = {
+  title: "The Last Kingdom",
+  author: "Bernard Cornwell",
+  genres: ["historical prose", "adventure"],
+  isPublic: true,
+  rating: 8.38,
+};
+
+
+const title = 'Main title global variable'
+const { title: bookTitle = 'no name', author, genres, isPublic, rating, pages = 300 } = book
+
+
+book.pages = 500
+
+console.log(pages)
+console.log(book.pages)
+// const bookTitle = book.title ?? 'no name'
+// const author = book.author
+// const pages = 300
+
+// const { ...Object.keys(book) } = book // syntax
+
+// console.log(pages) // 300
+
+const message = `
+This book has a title of ${bookTitle}, it was written by ${author}
+it belongs to genres of: ${genres.join(', ')}
+`
+
+console.log(message)

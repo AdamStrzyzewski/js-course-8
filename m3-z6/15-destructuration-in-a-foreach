@@ -1,0 +1,26 @@
+// destructuration in a foreach
+
+const books = [
+  {
+    title: "The Last Kingdom",
+    author: "Bernard Cornwell",
+    rating: 8.38,
+    pages: 450
+  },
+  {
+    title: "Beside Still Waters",
+    author: "Robert Sheckley",
+    rating: 8.51,
+  },
+];
+
+// books.forEach(function({ title, author: bookAuthor, rating, pages = 300 }, i){
+//     console.log(title,bookAuthor,rating,pages, i)
+//     console.log('----')
+// })
+
+books.forEach(function(book, i){
+    const { title, author: bookAuthor, rating, pages = 300 } = book
+    console.log(title,bookAuthor,rating,pages, i)
+    console.log('----')
+})

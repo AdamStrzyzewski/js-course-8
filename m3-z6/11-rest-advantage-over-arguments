@@ -1,0 +1,18 @@
+// rest advantage over arguments
+
+function addMoney(currencySymbol, ...amounts) {
+    // summing up all amounts
+    // alternative for the bold
+    // const total = amounts.reduce(function (acc,el) { return acc + el }, 0)
+    let total = 0
+    for (let i = 0 ; i < amounts.length ; i++){
+        total += amounts[i]
+    }
+    
+    console.log(`${currencySymbol} ${total}`)
+}
+
+
+addMoney('$', 15, 30, 50, 180, 300)
+addMoney('PLN', 21, 30, 120)
+

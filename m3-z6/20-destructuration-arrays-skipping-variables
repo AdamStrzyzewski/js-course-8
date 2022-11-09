@@ -1,0 +1,11 @@
+// destructuration arrays skipping variables
+
+const arr = [1,2, 200, 255, 3 ,100]
+
+const [,,red, green,, blue] = arr
+
+// const red = arr[2]
+// const green = arr[3]
+// const blue = arr[5]
+
+console.log(red,green,blue)

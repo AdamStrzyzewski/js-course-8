@@ -1,0 +1,11 @@
+// spread arrays
+
+// ...
+
+const temps = [14,2,10,4];
+
+// console.log(...temps)
+// console.log(14,2,10,4)
+
+// console.log(Math.max(temps[0], temps[1],temps[2],temps[3])) // => 14
+// console.log(Math.max(...temps)) // => 14

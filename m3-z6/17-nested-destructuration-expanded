@@ -1,0 +1,30 @@
+// nested destructuration expanded
+
+const user = {
+  name: "Jacques Gluke",
+  tag: "jgluke",
+  stats: {
+    followers: 5603,
+    views: 4827,
+    likes: 1308,
+  },
+};
+
+
+let {
+    name,
+    tag,
+    stats: {
+     followers: userFollowers, views: userViews, likes: userLikes = 0   
+    }
+} = user
+
+// const userFollowers = user.stats.followers
+
+// console.log(Object.keys(user))
+console.log([name, tag, userFollowers, userViews,userLikes])
+
+user.stats.followers = 10000
+console.log(user)
+userFollowers = 15000
+console.log(userFollowers)

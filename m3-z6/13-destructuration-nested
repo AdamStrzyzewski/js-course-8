@@ -1,0 +1,21 @@
+// destructuration nested
+
+const book = {
+  title: "The Last Kingdom",
+  author: "Bernard Cornwell",
+  genres: ["historical prose", "adventure"],
+  isPublic: true,
+  rating: 8.38,
+};
+
+
+const title = 'Main title global variable'
+const { genres } = book
+// const genres = book.genres
+
+genres.push('historical')
+
+console.log(genres)
+
+console.log(book)
+
